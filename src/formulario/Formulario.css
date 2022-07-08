@@ -1,0 +1,8 @@
+.container{
+    max-width: 25vw;
+    margin: 1rem auto;
+    border: thin solid blueviolet;
+    padding: 1rem;
+    background-color: gray;
+    color: white;
+}
