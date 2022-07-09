@@ -7,8 +7,9 @@ class Select extends React.Component {
             <div className="ctn-select">
                 <label>{this.props.name}</label>
                 <select>
+                    <option>Seleccione un Item</option>
                     {this.props.items.map( item => {
-                        return (<option>{item}</option>)
+                        return (<option key={item.key}>{item.nombre}</option>) // el value en jsx es key
                     })};
                 </select>
             </div>
