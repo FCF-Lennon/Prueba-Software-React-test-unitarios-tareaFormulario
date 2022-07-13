@@ -2,6 +2,7 @@ import React from "react";
 import '../select/Select.css'
 
 class Select extends React.Component {
+
     render () {
         return (  
             <div className="ctn-select">
@@ -19,7 +20,7 @@ class Select extends React.Component {
                 {/* luego creamos otra condicion para expresar lo contrario */}
 
                 {this.props.items !== undefined && (
-                    <select>
+                    <select onChange={(e) => {this.props.change(e)}}>
                     <option hidden>Seleccione un Item</option>
                     {this.props.items.map( item => {
                         return (<option key={item.key}>{item.nombre}</option>) // el value en jsx es key
