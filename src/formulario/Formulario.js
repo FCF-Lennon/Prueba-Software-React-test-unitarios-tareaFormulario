@@ -25,7 +25,7 @@ class Formulario extends React.Component {
         {key:1, nombre:'Nissan'},
         {key:2, nombre:'Citroen'},
         {key:3, nombre:'Kia'},
-        {key:4, nombre:'Pegeut'},
+        {key:4, nombre:'Peugeot'},
     ];
     
     domModelos = [
